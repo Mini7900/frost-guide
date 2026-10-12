@@ -1,0 +1,230 @@
+{
+  "site": {
+    "name": "Frost Guide",
+    "eyebrow": "WHITEOUT SURVIVAL / THE FROST ARCHIVE",
+    "headline": "Find your way\nthrough the frost.",
+    "intro": "Your field notes for Whiteout Survival. From city building to alliance teamwork, make every decision with a little more preparation.",
+    "about": "All guides are managed in JSON. These sample notes demonstrate the website and its layout. For exact values, unlock requirements and event rules, follow the latest in-game information."
+  },
+  "categories": [
+    {
+      "id": "beginner",
+      "name": "Getting started"
+    },
+    {
+      "id": "city",
+      "name": "City development"
+    },
+    {
+      "id": "heroes",
+      "name": "Hero growth"
+    },
+    {
+      "id": "alliance",
+      "name": "Alliance teamwork"
+    }
+  ],
+  "guides": [
+    {
+      "id": "guide-01",
+      "category": "beginner",
+      "title": "Getting started: build your survival routine",
+      "summary": "A first checklist for the frozen world, covering tutorials, the Furnace and daily planning.",
+      "tags": [
+        "First steps",
+        "Daily planning"
+      ],
+      "icon": "❄",
+      "art": "ice",
+      "minutes": 3,
+      "updated": "2026-10-12",
+      "sections": [
+        {
+          "heading": "Learn your city through the tutorial",
+          "body": "Complete the in-game tutorial to learn about the Furnace, resource buildings, survivor needs and the task interface. Check unlock requirements before spending materials on features you cannot use yet."
+        },
+        {
+          "heading": "Create a daily checklist",
+          "body": "Check survivor status, construction queues, claimable rewards and alliance messages when you log in. Before leaving, plan construction or gathering around your next login."
+        },
+        {
+          "heading": "Keep your options open",
+          "body": "Read item descriptions before using speedups or rare items. These are general sample notes; adapt them to your server and game version."
+        }
+      ]
+    },
+    {
+      "id": "guide-02",
+      "category": "city",
+      "title": "Furnace and city: your upgrade checklist",
+      "summary": "Check prerequisites and resources first, then develop your city at a pace that suits you.",
+      "tags": [
+        "Furnace upgrades",
+        "Construction"
+      ],
+      "icon": "♜",
+      "art": "gold",
+      "minutes": 4,
+      "updated": "2026-10-12",
+      "sections": [
+        {
+          "heading": "Check prerequisites",
+          "body": "Review the buildings, resources and time required in the upgrade interface. List any missing requirements and complete the ones blocking progress first."
+        },
+        {
+          "heading": "Plan resources and queues",
+          "body": "Arrange gathering and construction based on your actual needs. Check storage protection and available resources before claiming large amounts you cannot use immediately."
+        },
+        {
+          "heading": "Check survivor status",
+          "body": "As your city grows, review survivor needs and the facilities that support them. Follow in-game information for exact effects and mechanics."
+        }
+      ]
+    },
+    {
+      "id": "guide-03",
+      "category": "heroes",
+      "title": "Hero growth: spend resources with purpose",
+      "summary": "Review hero roles and training priorities to create a manageable development plan.",
+      "tags": [
+        "Hero roles",
+        "Resource allocation"
+      ],
+      "icon": "⚔",
+      "art": "purple",
+      "minutes": 5,
+      "updated": "2026-10-12",
+      "sections": [
+        {
+          "heading": "Read skills and roles first",
+          "body": "Review each hero’s skills, troop type and supported modes. Battles, exploration and other activities may call for different choices; do not rely on one number alone."
+        },
+        {
+          "heading": "Plan around your current heroes",
+          "body": "Take stock of your heroes and materials, then prioritize the teams you use most. Check the purpose and sources of rare shards and equipment before spending them."
+        },
+        {
+          "heading": "Keep notes from actual play",
+          "body": "Record how teams perform in comparable situations before making changes. These notes do not provide unverified rankings or a fixed best team."
+        }
+      ]
+    },
+    {
+      "id": "guide-04",
+      "category": "alliance",
+      "title": "Joining an alliance: start with cooperation",
+      "summary": "Find a suitable alliance and understand its communication and participation rules.",
+      "tags": [
+        "Alliance help",
+        "Teamwork"
+      ],
+      "icon": "⚑",
+      "art": "forest",
+      "minutes": 3,
+      "updated": "2026-10-12",
+      "sections": [
+        {
+          "heading": "Choose an alliance that fits",
+          "body": "Read alliance descriptions and check their main language, active hours and participation requirements. Choose a pace that works with your schedule."
+        },
+        {
+          "heading": "Follow announcements and plans",
+          "body": "Before an event, read alliance announcements for the meeting time, objective and participation instructions. Ask alliance leaders when a rule is unclear."
+        },
+        {
+          "heading": "Use the in-game information",
+          "body": "Help, technology and event limits may change with updates. Check the current in-game rules before taking part."
+        }
+      ]
+    },
+    {
+      "id": "guide-05",
+      "category": "city",
+      "title": "Resource management: prepare for your next build",
+      "summary": "Review resource sources, requirements and items to make your upgrade plan clearer.",
+      "tags": [
+        "Gathering plans",
+        "Build preparation"
+      ],
+      "icon": "◇",
+      "art": "forest",
+      "minutes": 4,
+      "updated": "2026-10-12",
+      "sections": [
+        {
+          "heading": "Review your current needs",
+          "body": "Decide on your next construction or research goal, then identify the resources you lack. Avoid using all your items before you have a clear goal."
+        },
+        {
+          "heading": "Check resource sources",
+          "body": "Use in-game source information to find tasks, gathering and other ways to obtain resources. Plan around the features you have unlocked."
+        },
+        {
+          "heading": "Use items when you need them",
+          "body": "Time resource-item use around your next objective. Read item descriptions and protection rules; this sample is not a fixed strategy."
+        }
+      ]
+    },
+    {
+      "id": "guide-06",
+      "category": "beginner",
+      "title": "Event notes: read the rules before joining",
+      "summary": "A simple checklist for event timing, rewards and the resources you can commit.",
+      "tags": [
+        "Event preparation",
+        "Task checklist"
+      ],
+      "icon": "◷",
+      "art": "ice",
+      "minutes": 5,
+      "updated": "2026-10-12",
+      "sections": [
+        {
+          "heading": "Check timing and rules",
+          "body": "Open the event page to review remaining time, scoring and reward requirements. Event schedules may differ between servers."
+        },
+        {
+          "heading": "Set a realistic goal",
+          "body": "Review your available resources and time before choosing a target. Keep your commitment within your own limits rather than following sample advice blindly."
+        },
+        {
+          "heading": "Review your results",
+          "body": "After the event, record what you achieved and what you spent to inform your next attempt. Turn those notes into new guides when updating the website JSON."
+        }
+      ]
+    }
+  ],
+  "ui": {
+    "home": "Frost Guide home",
+    "navGuides": "Guide library",
+    "navAbout": "About ↗",
+    "status": "● JSON powered",
+    "explore": "Explore guides",
+    "motto": "Be prepared. Go further.",
+    "statsLabel": "Library statistics",
+    "notes": "Field notes",
+    "categories": "Categories",
+    "source": "Content source",
+    "demo": "Sample dataset",
+    "libraryEyebrow": "THE FIELD NOTES",
+    "libraryTitle": "Find your next step.",
+    "libraryIntro": "From your first expedition to the challenges ahead.\nFind the guide you need right now.",
+    "filterLabel": "Guide categories",
+    "all": "All guides",
+    "searchPlaceholder": "Search guides, keywords…",
+    "searchLabel": "Search guides",
+    "results": "{count} guides",
+    "curated": "Curated notes / Always evolving",
+    "empty": "No guides found. Try another keyword or category.",
+    "minutes": "{count} min read",
+    "aboutEyebrow": "BUILT FOR THE JOURNEY",
+    "aboutTitle": "Make knowledge part of your gear.",
+    "viewJson": "View JSON data ↗",
+    "footer": "Static website · JSON content",
+    "top": "Back to top ↑",
+    "close": "Close guide",
+    "updated": "Updated: {date} · Sample content; replace with verified game information.",
+    "error": "Unable to load guides. Open the site through an HTTP server and check the JSON files.",
+    "fieldNote": "FIELD NOTE / {count}"
+  }
+}
