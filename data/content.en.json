@@ -4,7 +4,7 @@
     "eyebrow": "WHITEOUT SURVIVAL / THE FROST ARCHIVE",
     "headline": "Find your way\nthrough the frost.",
     "intro": "Your field notes for Whiteout Survival. From city building to alliance teamwork, make every decision with a little more preparation.",
-    "about": "Your field notes for city development, hero growth and alliance teamwork. These guides are sample notes; follow the latest in-game information for exact values, unlock requirements and event rules."
+    "about": "Your field notes for city development, hero growth and alliance teamwork. Some guides are sample notes; follow the latest in-game information for exact values, unlock requirements and event rules."
   },
   "categories": [
     {
@@ -22,9 +22,39 @@
     {
       "id": "alliance",
       "name": "Alliance teamwork"
+    },
+    {
+      "id": "daily",
+      "name": "Daily tasks"
     }
   ],
   "guides": [
+    {
+      "id": "daily-intel-refresh",
+      "category": "daily",
+      "title": "Intel refresh times",
+      "summary": "Intel refreshes daily at 00:00, 08:00 and 16:00 UTC.",
+      "tags": [
+        "Intel",
+        "Daily tasks",
+        "UTC"
+      ],
+      "icon": "◷",
+      "art": "ice",
+      "minutes": 1,
+      "updated": "2026-10-13",
+      "note": "All times are UTC (UTC+0).",
+      "sections": [
+        {
+          "heading": "Daily refresh schedule (UTC)",
+          "body": "00:00 UTC\n08:00 UTC\n16:00 UTC\n\nIntel refreshes three times a day, eight hours apart."
+        },
+        {
+          "heading": "Taiwan time reference (UTC+8)",
+          "body": "00:00 UTC → 08:00 Taiwan time\n08:00 UTC → 16:00 Taiwan time\n16:00 UTC → 00:00 the next day in Taiwan (24:00)\n\nThe primary schedule in this guide uses UTC."
+        }
+      ]
+    },
     {
       "id": "bear-attack",
       "category": "alliance",

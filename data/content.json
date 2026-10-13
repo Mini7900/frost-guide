@@ -4,7 +4,7 @@
     "eyebrow": "WHITEOUT SURVIVAL / 寒霜啟示錄",
     "headline": "在凜冬之中，\n找到前進的方向。",
     "intro": "你的寒霜啟示錄探索筆記。從城市建設到聯盟協作，讓每一次決策，都更有準備。",
-    "about": "整理城市發展、英雄養成與聯盟協作的探索筆記。目前攻略為示範內容；實際數值、解鎖條件與活動規則，請以遊戲內最新說明為準。"
+    "about": "整理城市發展、英雄養成與聯盟協作的探索筆記。部分攻略為示範內容；實際數值、解鎖條件與活動規則，請以遊戲內最新說明為準。"
   },
   "categories": [
     {
@@ -22,9 +22,39 @@
     {
       "id": "alliance",
       "name": "聯盟協作"
+    },
+    {
+      "id": "daily",
+      "name": "每日任務"
     }
   ],
   "guides": [
+    {
+      "id": "daily-intel-refresh",
+      "category": "daily",
+      "title": "情報刷新時間",
+      "summary": "情報每天於 UTC 00:00、08:00、16:00 刷新。",
+      "tags": [
+        "情報",
+        "每日任務",
+        "UTC"
+      ],
+      "icon": "◷",
+      "art": "ice",
+      "minutes": 1,
+      "updated": "2026-10-13",
+      "note": "本文時間皆為 UTC（UTC+0）。",
+      "sections": [
+        {
+          "heading": "每日刷新時段（UTC）",
+          "body": "UTC 00:00\nUTC 08:00\nUTC 16:00\n\n每天刷新三次，每次間隔 8 小時。"
+        },
+        {
+          "heading": "台灣時間對照（UTC+8）",
+          "body": "UTC 00:00 → 台灣時間 08:00\nUTC 08:00 → 台灣時間 16:00\nUTC 16:00 → 台灣時間隔日 00:00（24:00）\n\n本攻略以 UTC 為主要標示時間。"
+        }
+      ]
+    },
     {
       "id": "bear-attack",
       "category": "alliance",

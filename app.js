@@ -51,7 +51,7 @@ function openGuide(g) {
     section.append(el('p', s.body));
     content.append(section);
   });
-  content.append(el('p', t('updated', {date: g.updated}), 'article-note')); if (!$('#article').open) {
+  content.append(el('p', g.note || t('updated', {date: g.updated}), 'article-note')); if (!$('#article').open) {
     $('#article').showModal();
     content.scrollTop = 0;
     $('#article .close').focus({preventScroll: true});
