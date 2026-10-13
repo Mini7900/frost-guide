@@ -22,9 +22,14 @@ function render() {
 }
 function openGuide(g) {
   articleId = g.id;
-  const content = $('#article-content'); content.replaceChildren(el('p', `${data.categories.find(c => c.id === g.category).name} · ${t('minutes', {count: g.minutes})}`, 'eyebrow'), el('h2', g.title), el('p', g.summary, 'article-summary'));
+  $('#article-title').textContent = g.title;
+  const content = $('#article-content'); content.replaceChildren(el('p', `${data.categories.find(c => c.id === g.category).name} · ${t('minutes', {count: g.minutes})}`, 'eyebrow'), el('p', g.summary, 'article-summary'));
   g.sections.forEach(s => content.append(el('h3', s.heading), el('p', s.body)));
-  content.append(el('p', t('updated', {date: g.updated}), 'article-note')); if (!$('#article').open) $('#article').showModal();
+  content.append(el('p', t('updated', {date: g.updated}), 'article-note')); if (!$('#article').open) {
+    $('#article').showModal();
+    content.scrollTop = 0;
+    $('#article .close').focus({preventScroll: true});
+  }
 }
 $('#article .close').addEventListener('click', () => $('#article').close());
 $('#article').addEventListener('click', e => { if (e.target === $('#article')) { const r = e.target.getBoundingClientRect(); if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) e.target.close(); } });
