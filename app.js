@@ -1,3 +1,4 @@
+const assetVersion = new URL(import.meta.url).searchParams.get('v') || `${Date.now()}-${crypto.randomUUID()}`;
 const $ = (selector) => document.querySelector(selector);
 let data, datasets, active = 'all', articleId;
 let language = 'zh-Hant';
@@ -55,7 +56,9 @@ $('#language').addEventListener('change', () => {
 try {
   const paths = ['data/content.json', 'data/content.en.json'];
   const [zh, en] = await Promise.all(paths.map(async path => {
-    const response = await fetch(path);
+    const url = new URL(path, document.baseURI);
+    url.searchParams.set('v', assetVersion);
+    const response = await fetch(url, {cache: 'no-store'});
     if (!response.ok) throw new Error(`${path}: HTTP ${response.status}`);
     return response.json();
   }));
