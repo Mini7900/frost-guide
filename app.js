@@ -24,7 +24,33 @@ function openGuide(g) {
   articleId = g.id;
   $('#article-title').textContent = g.title;
   const content = $('#article-content'); content.replaceChildren(el('p', `${data.categories.find(c => c.id === g.category).name} · ${t('minutes', {count: g.minutes})}`, 'eyebrow'), el('p', g.summary, 'article-summary'));
-  g.sections.forEach(s => content.append(el('h3', s.heading), el('p', s.body)));
+  g.sections.forEach(s => {
+    const section = el('section', '', 'article-step');
+    section.append(el('h3', s.heading));
+    if (s.image) {
+      const figure = el('figure', '', 'guide-figure');
+      const image = document.createElement('img');
+      const url = new URL(s.image, document.baseURI);
+      url.searchParams.set('v', assetVersion);
+      image.src = url.href;
+      image.alt = s.alt || s.heading;
+      image.loading = 'lazy';
+      image.decoding = 'async';
+      if (s.imageWidth && s.imageHeight) {
+        image.width = s.imageWidth;
+        image.height = s.imageHeight;
+      }
+      image.addEventListener('error', () => {
+        image.hidden = true;
+        figure.append(el('p', t('imageError'), 'image-error'));
+      }, {once: true});
+      figure.append(image);
+      if (s.caption) figure.append(el('figcaption', s.caption));
+      section.append(figure);
+    }
+    section.append(el('p', s.body));
+    content.append(section);
+  });
   content.append(el('p', t('updated', {date: g.updated}), 'article-note')); if (!$('#article').open) {
     $('#article').showModal();
     content.scrollTop = 0;

@@ -26,6 +26,49 @@
   ],
   "guides": [
     {
+      "id": "bear-attack",
+      "category": "alliance",
+      "title": "Bear attack: a three-step visual guide",
+      "summary": "Three sample illustrations with step-by-step notes. Replace them with your own screenshots and verified instructions.",
+      "tags": [
+        "Bear attack",
+        "Visual guide"
+      ],
+      "icon": "⚑",
+      "art": "forest",
+      "minutes": 3,
+      "updated": "2026-10-13",
+      "sections": [
+        {
+          "heading": "Step 1: Prepare your team",
+          "image": "images/bear/step-1.png",
+          "alt": "A sample illustration of winter survivors preparing their equipment",
+          "caption": "Demo illustration · not a game screenshot",
+          "body": "Review your team before the event. This placeholder shows generic survivors and equipment, not a recommended hero lineup. Replace it with your own team screenshot and instructions.",
+          "imageWidth": 1536,
+          "imageHeight": 1024
+        },
+        {
+          "heading": "Step 2: Assemble the rally",
+          "image": "images/bear/step-2.png",
+          "alt": "A sample illustration of winter squads gathering by a rally flag",
+          "caption": "Demo illustration · not a game screenshot",
+          "body": "Check your alliance announcement and in-game event instructions before participating. This illustration demonstrates where a rally screenshot can go; it does not show actual game controls.",
+          "imageWidth": 1536,
+          "imageHeight": 1024
+        },
+        {
+          "heading": "Step 3: Attack and review the results",
+          "image": "images/bear/step-3.png",
+          "alt": "A sample illustration of a bear and winter squads in a snowy arena",
+          "caption": "Demo illustration · not a game screenshot",
+          "body": "Follow the current event rules and alliance plan, then review the results. Replace this test image with your own battle screenshot and add the relevant explanation.",
+          "imageWidth": 1536,
+          "imageHeight": 1024
+        }
+      ]
+    },
+    {
       "id": "guide-01",
       "category": "beginner",
       "title": "Getting started: build your survival routine",
@@ -218,6 +261,7 @@
     "close": "Close guide",
     "updated": "Updated: {date} · Sample content; replace with verified game information.",
     "error": "Unable to load guides. Please try again later.",
-    "fieldNote": "FIELD NOTE / {count}"
+    "fieldNote": "FIELD NOTE / {count}",
+    "imageError": "Image temporarily unavailable. You can still read the instructions below."
   }
 }
