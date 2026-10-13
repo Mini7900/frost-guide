@@ -40,8 +40,6 @@ function applyLanguage() {
   document.title = data.site.name;
   ['eyebrow', 'headline', 'intro'].forEach(id => $(`#${id}`).textContent = data.site[id]);
   $('#about-text').textContent = data.site.about;
-  $('#stats').replaceChildren();
-  [[data.guides.length, t('notes')], [data.categories.length, t('categories')]].forEach(([v, label]) => { const stat = el('div', '', 'stat'); stat.append(el('strong', String(v).padStart(2, '0')), el('span', label)); $('#stats').append(stat); });
   $('#filters').replaceChildren();
   [{id:'all', name:t('all')}, ...data.categories].forEach(c => { const b = el('button', c.name, 'filter'); b.dataset.id = c.id; b.addEventListener('click', () => {active = c.id; render();}); $('#filters').append(b); });
   render();
