@@ -4,7 +4,7 @@
     "eyebrow": "WHITEOUT SURVIVAL / THE FROST ARCHIVE",
     "headline": "Find your way\nthrough the frost.",
     "intro": "Your field notes for Whiteout Survival. From city building to alliance teamwork, make every decision with a little more preparation.",
-    "about": "All guides are managed in JSON. These sample notes demonstrate the website and its layout. For exact values, unlock requirements and event rules, follow the latest in-game information."
+    "about": "Your field notes for city development, hero growth and alliance teamwork. These guides are sample notes; follow the latest in-game information for exact values, unlock requirements and event rules."
   },
   "categories": [
     {
@@ -189,7 +189,7 @@
         },
         {
           "heading": "Review your results",
-          "body": "After the event, record what you achieved and what you spent to inform your next attempt. Turn those notes into new guides when updating the website JSON."
+          "body": "After the event, record what you achieved and what you spent. Use those notes to prepare for your next attempt."
         }
       ]
     }
@@ -198,14 +198,11 @@
     "home": "Frost Guide home",
     "navGuides": "Guide library",
     "navAbout": "About ↗",
-    "status": "● JSON powered",
     "explore": "Explore guides",
     "motto": "Be prepared. Go further.",
     "statsLabel": "Library statistics",
     "notes": "Field notes",
     "categories": "Categories",
-    "source": "Content source",
-    "demo": "Sample dataset",
     "libraryEyebrow": "THE FIELD NOTES",
     "libraryTitle": "Find your next step.",
     "libraryIntro": "From your first expedition to the challenges ahead.\nFind the guide you need right now.",
@@ -219,12 +216,11 @@
     "minutes": "{count} min read",
     "aboutEyebrow": "BUILT FOR THE JOURNEY",
     "aboutTitle": "Make knowledge part of your gear.",
-    "viewJson": "View JSON data ↗",
-    "footer": "Static website · JSON content",
+    "footer": "Whiteout Survival field notes",
     "top": "Back to top ↑",
     "close": "Close guide",
     "updated": "Updated: {date} · Sample content; replace with verified game information.",
-    "error": "Unable to load guides. Open the site through an HTTP server and check the JSON files.",
+    "error": "Unable to load guides. Please try again later.",
     "fieldNote": "FIELD NOTE / {count}"
   }
 }

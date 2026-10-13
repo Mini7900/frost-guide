@@ -39,9 +39,8 @@ function applyLanguage() {
   document.title = data.site.name;
   ['eyebrow', 'headline', 'intro'].forEach(id => $(`#${id}`).textContent = data.site[id]);
   $('#about-text').textContent = data.site.about;
-  $('#json-link').href = language === 'en' ? 'data/content.en.json' : 'data/content.json';
   $('#stats').replaceChildren();
-  [[data.guides.length, t('notes')], [data.categories.length, t('categories')], ['JSON', t('source')], ['DEMO', t('demo')]].forEach(([v, label]) => { const stat = el('div', '', 'stat'); stat.append(el('strong', String(v).padStart(2, '0')), el('span', label)); $('#stats').append(stat); });
+  [[data.guides.length, t('notes')], [data.categories.length, t('categories')]].forEach(([v, label]) => { const stat = el('div', '', 'stat'); stat.append(el('strong', String(v).padStart(2, '0')), el('span', label)); $('#stats').append(stat); });
   $('#filters').replaceChildren();
   [{id:'all', name:t('all')}, ...data.categories].forEach(c => { const b = el('button', c.name, 'filter'); b.dataset.id = c.id; b.addEventListener('click', () => {active = c.id; render();}); $('#filters').append(b); });
   render();
@@ -51,7 +50,7 @@ $('#language').addEventListener('change', () => {
   language = $('#language').value;
   try { localStorage.setItem('frost-language', language); } catch {}
   if (datasets) applyLanguage();
-  else $('#error').textContent = language === 'en' ? 'Unable to load guides. Please reload and check the JSON files.' : '攻略資料載入失敗，請重新載入並確認 JSON 檔案。';
+  else $('#error').textContent = language === 'en' ? 'Unable to load guides. Please try again later.' : '攻略暫時無法載入，請稍後再試。';
 });
 try {
   const paths = ['data/content.json', 'data/content.en.json'];
@@ -64,6 +63,6 @@ try {
   applyLanguage();
 } catch (error) {
   $('#error').hidden = false;
-  $('#error').textContent = language === 'en' ? 'Unable to load guides. Open the site through an HTTP server and check the JSON files.' : '攻略資料載入失敗。請透過 HTTP 靜態伺服器開啟，並確認 JSON 格式正確。';
+  $('#error').textContent = language === 'en' ? 'Unable to load guides. Please try again later.' : '攻略暫時無法載入，請稍後再試。';
   console.error(error);
 }
