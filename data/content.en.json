@@ -30,6 +30,271 @@
   ],
   "guides": [
     {
+      "id": "daily-login-essentials",
+      "category": "daily",
+      "title": "Daily login essentials",
+      "summary": "A 12-part daily routine for free-to-play, light-spending and casual players: rewards, merchants, marches and queues.",
+      "tags": [
+        "Daily routine",
+        "Free rewards",
+        "Gina",
+        "Pet dispatches"
+      ],
+      "icon": "☀",
+      "art": "gold",
+      "minutes": 5,
+      "updated": "2026-10-15",
+      "note": "Intel refresh times retain the original UTC schedule with Taiwan time (UTC+8) reference. Other daily guidance was provided by the player.",
+      "sections": [
+        {
+          "heading": "Purpose and audience",
+          "body": "For free-to-play, light-spending and casual players. Make the most of daily login time without wasting free rewards, march slots, resources or available attempts.",
+          "steps": [
+            {
+              "icon": "☀",
+              "label": "Check tasks & rewards"
+            },
+            {
+              "icon": "⚑",
+              "label": "Assign marches & queues"
+            },
+            {
+              "icon": "✓",
+              "label": "Review before leaving"
+            }
+          ]
+        },
+        {
+          "heading": "01 ◷ Intel missions",
+          "table": {
+            "caption": "Intel refresh times: UTC and Taiwan",
+            "headers": [
+              "Refresh",
+              "UTC time",
+              "Taiwan time (UTC+8)"
+            ],
+            "rows": [
+              [
+                "1",
+                "00:00",
+                "08:00"
+              ],
+              [
+                "2",
+                "08:00",
+                "16:00"
+              ],
+              [
+                "3",
+                "16:00",
+                "00:00 (next day)"
+              ]
+            ]
+          },
+          "body": "Intel refreshes 3 times a day, every 8 hours. Complete intel missions promptly after each refresh to avoid excessive accumulation or missed rewards."
+        },
+        {
+          "heading": "02 ✦ Daily missions",
+          "checklist": [
+            {
+              "label": "Review unfinished tasks",
+              "detail": "Check resource gathering, troop training, arena challenges and other daily activity objectives."
+            },
+            {
+              "label": "Claim activity rewards",
+              "detail": "Complete daily activity and claim all available rewards."
+            }
+          ]
+        },
+        {
+          "heading": "03 ◇ Merchant purchases",
+          "table": {
+            "caption": "Mystery Merchant and Wandering Merchant",
+            "headers": [
+              "Merchant",
+              "Recommended action"
+            ],
+            "rows": [
+              [
+                "Mystery Merchant",
+                "Use all daily free refreshes and claim free items first."
+              ],
+              [
+                "Mystery Merchant",
+                "Prioritize exclusive-weapon-related items at 50% off. Buy other items according to your resource needs."
+              ],
+              [
+                "Wandering Merchant",
+                "Prioritize worthwhile items purchasable with ordinary resources."
+              ],
+              [
+                "Wandering Merchant",
+                "Refresh after purchasing, repeating until no available refreshes remain."
+              ]
+            ]
+          },
+          "body": "Do not waste gems simply to clear the shop."
+        },
+        {
+          "heading": "04 ★ Free rewards",
+          "checklist": [
+            {
+              "label": "Login rewards and packs",
+              "detail": "Check daily login rewards and free packs."
+            },
+            {
+              "label": "Alliance and events",
+              "detail": "Collect alliance gifts and event rewards."
+            },
+            {
+              "label": "Other free items",
+              "detail": "Confirm all available free rewards have been claimed."
+            }
+          ]
+        },
+        {
+          "heading": "05 ♜ Building, training and research",
+          "checklist": [
+            {
+              "label": "Building upgrades",
+              "detail": "Check for idle building queues and keep them running where possible."
+            },
+            {
+              "label": "Troop training or promotion",
+              "detail": "Schedule training or promotions to avoid long idle periods."
+            },
+            {
+              "label": "Technology research",
+              "detail": "Check that research is ongoing. When preparing for a major event, reserve speedups and resources as needed."
+            }
+          ]
+        },
+        {
+          "heading": "06 ⚑ Gathering marches",
+          "table": {
+            "caption": "Keep 1 march for auto-joining rallies; gather with the rest",
+            "headers": [
+              "Available marches",
+              "Gathering",
+              "Auto-rally"
+            ],
+            "rows": [
+              [
+                "4",
+                "3",
+                "1"
+              ],
+              [
+                "5",
+                "4",
+                "1"
+              ],
+              [
+                "6",
+                "5",
+                "1"
+              ]
+            ]
+          },
+          "body": "Send gathering marches before logging off to avoid idle slots. Adjust for alliance events or combat when needed."
+        },
+        {
+          "heading": "07 ◎ Expert patrols",
+          "checklist": [
+            {
+              "label": "Check accumulated patrols",
+              "detail": "Review the accumulated patrol count regularly."
+            },
+            {
+              "label": "Aim to stay at 80 or below",
+              "detail": "Complete patrols in time to avoid missing available rewards."
+            }
+          ]
+        },
+        {
+          "heading": "08 ⚔ Daily rally rewards",
+          "checklist": [
+            {
+              "label": "Complete 10 rally rewards daily",
+              "detail": "Confirm all daily rally rewards have been collected."
+            },
+            {
+              "label": "Starting a rally: prioritize Gina",
+              "detail": "Use Gina when starting applicable wilderness rallies to benefit from reduced stamina consumption."
+            },
+            {
+              "label": "Joining a rally: Gina is not always needed",
+              "detail": "Starting and joining are different actions. Auto-join can reduce manual work; normally keep 1 march available to support auto-rallies."
+            }
+          ]
+        },
+        {
+          "heading": "09 ♧ Pet dispatches",
+          "checklist": [
+            {
+              "label": "4 dispatches per day",
+              "detail": "Check and perform all 4 daily pet dispatches."
+            },
+            {
+              "label": "Claim completed rewards",
+              "detail": "Remember to collect rewards when dispatches finish."
+            }
+          ]
+        },
+        {
+          "heading": "10 ☀ Daybreak Island",
+          "checklist": [
+            {
+              "label": "Visit and collect regularly",
+              "detail": "Collect produced resources and available rewards."
+            },
+            {
+              "label": "Check available actions",
+              "detail": "Review other actions you can perform on the island."
+            }
+          ]
+        },
+        {
+          "heading": "11 ◷ Online rewards",
+          "checklist": [
+            {
+              "label": "Watch accumulated online time",
+              "detail": "Claim rewards when their time requirements are met."
+            },
+            {
+              "label": "Review daily collection",
+              "detail": "Confirm all currently available daily online rewards are claimed."
+            }
+          ]
+        },
+        {
+          "heading": "12 ✓ Before logging off",
+          "checklist": [
+            {
+              "label": "Intel and activity",
+              "detail": "Complete intel missions and claim daily activity rewards."
+            },
+            {
+              "label": "Building, training and research",
+              "detail": "Check that queues are still running."
+            },
+            {
+              "label": "Gathering and auto-rallies",
+              "detail": "Send gathering marches and reserve an auto-rally march."
+            },
+            {
+              "label": "Free rewards",
+              "detail": "Claim all available free rewards."
+            },
+            {
+              "label": "Other daily checks",
+              "detail": "Review pet dispatches, expert patrols and Daybreak Island."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "daily-intel-refresh",
       "category": "daily",
       "title": "Intel refresh times",
