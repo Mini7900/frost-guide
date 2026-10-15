@@ -343,90 +343,6 @@
       ]
     },
     {
-      "id": "guide-02",
-      "category": "city",
-      "title": "Furnace and city: your upgrade checklist",
-      "summary": "Check prerequisites and resources first, then develop your city at a pace that suits you.",
-      "tags": [
-        "Furnace upgrades",
-        "Construction"
-      ],
-      "icon": "♜",
-      "art": "gold",
-      "minutes": 4,
-      "updated": "2026-10-12",
-      "sections": [
-        {
-          "heading": "Check prerequisites",
-          "body": "Review the buildings, resources and time required in the upgrade interface. List any missing requirements and complete the ones blocking progress first."
-        },
-        {
-          "heading": "Plan resources and queues",
-          "body": "Arrange gathering and construction based on your actual needs. Check storage protection and available resources before claiming large amounts you cannot use immediately."
-        },
-        {
-          "heading": "Check survivor status",
-          "body": "As your city grows, review survivor needs and the facilities that support them. Follow in-game information for exact effects and mechanics."
-        }
-      ]
-    },
-    {
-      "id": "guide-03",
-      "category": "heroes",
-      "title": "Hero growth: spend resources with purpose",
-      "summary": "Review hero roles and training priorities to create a manageable development plan.",
-      "tags": [
-        "Hero roles",
-        "Resource allocation"
-      ],
-      "icon": "⚔",
-      "art": "purple",
-      "minutes": 5,
-      "updated": "2026-10-12",
-      "sections": [
-        {
-          "heading": "Read skills and roles first",
-          "body": "Review each hero’s skills, troop type and supported modes. Battles, exploration and other activities may call for different choices; do not rely on one number alone."
-        },
-        {
-          "heading": "Plan around your current heroes",
-          "body": "Take stock of your heroes and materials, then prioritize the teams you use most. Check the purpose and sources of rare shards and equipment before spending them."
-        },
-        {
-          "heading": "Keep notes from actual play",
-          "body": "Record how teams perform in comparable situations before making changes. These notes do not provide unverified rankings or a fixed best team."
-        }
-      ]
-    },
-    {
-      "id": "guide-05",
-      "category": "city",
-      "title": "Resource management: prepare for your next build",
-      "summary": "Review resource sources, requirements and items to make your upgrade plan clearer.",
-      "tags": [
-        "Gathering plans",
-        "Build preparation"
-      ],
-      "icon": "◇",
-      "art": "forest",
-      "minutes": 4,
-      "updated": "2026-10-12",
-      "sections": [
-        {
-          "heading": "Review your current needs",
-          "body": "Decide on your next construction or research goal, then identify the resources you lack. Avoid using all your items before you have a clear goal."
-        },
-        {
-          "heading": "Check resource sources",
-          "body": "Use in-game source information to find tasks, gathering and other ways to obtain resources. Plan around the features you have unlocked."
-        },
-        {
-          "heading": "Use items when you need them",
-          "body": "Time resource-item use around your next objective. Read item descriptions and protection rules; this sample is not a fixed strategy."
-        }
-      ]
-    },
-    {
       "id": "state-transfer",
       "category": "city",
       "title": "State Transfer guide",
@@ -565,6 +481,90 @@
               ]
             ]
           }
+        }
+      ]
+    },
+    {
+      "id": "guide-02",
+      "category": "city",
+      "title": "Furnace and city: your upgrade checklist",
+      "summary": "Check prerequisites and resources first, then develop your city at a pace that suits you.",
+      "tags": [
+        "Furnace upgrades",
+        "Construction"
+      ],
+      "icon": "♜",
+      "art": "gold",
+      "minutes": 4,
+      "updated": "2026-10-12",
+      "sections": [
+        {
+          "heading": "Check prerequisites",
+          "body": "Review the buildings, resources and time required in the upgrade interface. List any missing requirements and complete the ones blocking progress first."
+        },
+        {
+          "heading": "Plan resources and queues",
+          "body": "Arrange gathering and construction based on your actual needs. Check storage protection and available resources before claiming large amounts you cannot use immediately."
+        },
+        {
+          "heading": "Check survivor status",
+          "body": "As your city grows, review survivor needs and the facilities that support them. Follow in-game information for exact effects and mechanics."
+        }
+      ]
+    },
+    {
+      "id": "guide-03",
+      "category": "heroes",
+      "title": "Hero growth: spend resources with purpose",
+      "summary": "Review hero roles and training priorities to create a manageable development plan.",
+      "tags": [
+        "Hero roles",
+        "Resource allocation"
+      ],
+      "icon": "⚔",
+      "art": "purple",
+      "minutes": 5,
+      "updated": "2026-10-12",
+      "sections": [
+        {
+          "heading": "Read skills and roles first",
+          "body": "Review each hero’s skills, troop type and supported modes. Battles, exploration and other activities may call for different choices; do not rely on one number alone."
+        },
+        {
+          "heading": "Plan around your current heroes",
+          "body": "Take stock of your heroes and materials, then prioritize the teams you use most. Check the purpose and sources of rare shards and equipment before spending them."
+        },
+        {
+          "heading": "Keep notes from actual play",
+          "body": "Record how teams perform in comparable situations before making changes. These notes do not provide unverified rankings or a fixed best team."
+        }
+      ]
+    },
+    {
+      "id": "guide-05",
+      "category": "city",
+      "title": "Resource management: prepare for your next build",
+      "summary": "Review resource sources, requirements and items to make your upgrade plan clearer.",
+      "tags": [
+        "Gathering plans",
+        "Build preparation"
+      ],
+      "icon": "◇",
+      "art": "forest",
+      "minutes": 4,
+      "updated": "2026-10-12",
+      "sections": [
+        {
+          "heading": "Review your current needs",
+          "body": "Decide on your next construction or research goal, then identify the resources you lack. Avoid using all your items before you have a clear goal."
+        },
+        {
+          "heading": "Check resource sources",
+          "body": "Use in-game source information to find tasks, gathering and other ways to obtain resources. Plan around the features you have unlocked."
+        },
+        {
+          "heading": "Use items when you need them",
+          "body": "Time resource-item use around your next objective. Read item descriptions and protection rules; this sample is not a fixed strategy."
         }
       ]
     }
