@@ -120,16 +120,16 @@
                 "Prioritize exclusive-weapon-related items at 50% off. Buy other items according to your resource needs."
               ],
               [
-                "Wandering Merchant",
-                "Prioritize worthwhile items purchasable with ordinary resources."
+                "Wandering Merchant · 1. Buy",
+                "For each of the 6 item slots, keep buying with ordinary resources until its price changes to gems. Do not buy at the gem price."
               ],
               [
-                "Wandering Merchant",
-                "Refresh after purchasing, repeating until no available refreshes remain."
+                "Wandering Merchant · 2. Refresh",
+                "Only refresh after all 6 slots have changed to gem prices. Repeat this purchase-and-refresh cycle until no refreshes remain."
               ]
             ]
           },
-          "body": "Do not waste gems simply to clear the shop."
+          "body": "Goal: obtain speedups and teleport items using ordinary resources. Stop purchasing a slot once its price switches to gems."
         },
         {
           "heading": "04 ★ Free rewards",
