@@ -425,6 +425,148 @@
           "body": "Time resource-item use around your next objective. Read item descriptions and protection rules; this sample is not a fixed strategy."
         }
       ]
+    },
+    {
+      "id": "state-transfer",
+      "category": "city",
+      "title": "State Transfer guide",
+      "summary": "Prepare Transfer Passes, contact your destination and review eligibility, transfer steps and important limits.",
+      "tags": [
+        "State Transfer",
+        "Transfer Passes",
+        "Cooldown"
+      ],
+      "icon": "⚑",
+      "art": "ice",
+      "minutes": 3,
+      "updated": "2026-10-15",
+      "note": "Reminder: transfer eligibility and event rules are subject to the current in-game announcement.",
+      "sections": [
+        {
+          "heading": "1. Before transferring",
+          "checklist": [
+            {
+              "label": "1. Check the transfer range",
+              "detail": "Confirm the destination state is within the eligible range for this event."
+            },
+            {
+              "label": "2. Check the power limit",
+              "detail": "Make sure your power meets the destination state’s limit."
+            },
+            {
+              "label": "3. Prepare Transfer Passes",
+              "detail": "Prepare enough Transfer Passes."
+            },
+            {
+              "label": "4. Contact the destination state",
+              "detail": "Ask in advance whether places are available."
+            },
+            {
+              "label": "5. Check eligibility and cooldown",
+              "detail": "Confirm you meet transfer eligibility and cooldown requirements."
+            }
+          ]
+        },
+        {
+          "heading": "◇ Getting Transfer Passes",
+          "table": {
+            "caption": "Ways to obtain Transfer Passes",
+            "headers": [
+              "Source",
+              "Details"
+            ],
+            "rows": [
+              [
+                "Alliance shop",
+                "Usually 1 pass per week for 150,000 alliance coins."
+              ],
+              [
+                "Packs",
+                "Passes can also be purchased through packs."
+              ]
+            ]
+          }
+        },
+        {
+          "heading": "2. How to transfer",
+          "steps": [
+            {
+              "icon": "◎",
+              "label": "Choose a state"
+            },
+            {
+              "icon": "✉",
+              "label": "Check phase & places"
+            },
+            {
+              "icon": "⚑",
+              "label": "Complete transfer"
+            }
+          ],
+          "checklist": [
+            {
+              "label": "1. Open the event",
+              "detail": "Open the State Transfer event."
+            },
+            {
+              "label": "2. Choose a destination",
+              "detail": "Select the state you want to move to."
+            },
+            {
+              "label": "3. Review requirements",
+              "detail": "Check the power limit, required Transfer Passes and remaining places."
+            },
+            {
+              "label": "4. Check the transfer phase",
+              "detail": "Accept an invitation during the invitation phase, or wait for the free transfer phase."
+            },
+            {
+              "label": "5. Leave and recall",
+              "detail": "Leave your current alliance and recall all deployed troops."
+            },
+            {
+              "label": "6. Confirm your transfer",
+              "detail": "Select Transfer and confirm to move to the new state."
+            }
+          ]
+        },
+        {
+          "heading": "3. Important notes",
+          "table": {
+            "caption": "Read before transferring",
+            "headers": [
+              "Item",
+              "Important information"
+            ],
+            "rows": [
+              [
+                "Above the power limit",
+                "You may need a special invitation from the destination state."
+              ],
+              [
+                "Transfer Passes",
+                "An invitation does not waive the Transfer Pass requirement."
+              ],
+              [
+                "Resources",
+                "Unprotected resources exceeding warehouse protection may be removed."
+              ],
+              [
+                "Available places",
+                "Free transfer places are limited. Contact the destination state in advance."
+              ],
+              [
+                "Cooldown",
+                "You usually need to wait 25 days after transferring before you can transfer again."
+              ],
+              [
+                "Moving with friends",
+                "Each player must meet the requirements and prepare their own Transfer Passes."
+              ]
+            ]
+          }
+        }
+      ]
     }
   ],
   "ui": {
