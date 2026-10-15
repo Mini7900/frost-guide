@@ -334,34 +334,6 @@
       ]
     },
     {
-      "id": "guide-01",
-      "category": "beginner",
-      "title": "Getting started: build your survival routine",
-      "summary": "A first checklist for the frozen world, covering tutorials, the Furnace and daily planning.",
-      "tags": [
-        "First steps",
-        "Daily planning"
-      ],
-      "icon": "❄",
-      "art": "ice",
-      "minutes": 3,
-      "updated": "2026-10-12",
-      "sections": [
-        {
-          "heading": "Learn your city through the tutorial",
-          "body": "Complete the in-game tutorial to learn about the Furnace, resource buildings, survivor needs and the task interface. Check unlock requirements before spending materials on features you cannot use yet."
-        },
-        {
-          "heading": "Create a daily checklist",
-          "body": "Check survivor status, construction queues, claimable rewards and alliance messages when you log in. Before leaving, plan construction or gathering around your next login."
-        },
-        {
-          "heading": "Keep your options open",
-          "body": "Read item descriptions before using speedups or rare items. These are general sample notes; adapt them to your server and game version."
-        }
-      ]
-    },
-    {
       "id": "guide-02",
       "category": "city",
       "title": "Furnace and city: your upgrade checklist",
@@ -470,34 +442,6 @@
         {
           "heading": "Use items when you need them",
           "body": "Time resource-item use around your next objective. Read item descriptions and protection rules; this sample is not a fixed strategy."
-        }
-      ]
-    },
-    {
-      "id": "guide-06",
-      "category": "beginner",
-      "title": "Event notes: read the rules before joining",
-      "summary": "A simple checklist for event timing, rewards and the resources you can commit.",
-      "tags": [
-        "Event preparation",
-        "Task checklist"
-      ],
-      "icon": "◷",
-      "art": "ice",
-      "minutes": 5,
-      "updated": "2026-10-12",
-      "sections": [
-        {
-          "heading": "Check timing and rules",
-          "body": "Open the event page to review remaining time, scoring and reward requirements. Event schedules may differ between servers."
-        },
-        {
-          "heading": "Set a realistic goal",
-          "body": "Review your available resources and time before choosing a target. Keep your commitment within your own limits rather than following sample advice blindly."
-        },
-        {
-          "heading": "Review your results",
-          "body": "After the event, record what you achieved and what you spent. Use those notes to prepare for your next attempt."
         }
       ]
     }
