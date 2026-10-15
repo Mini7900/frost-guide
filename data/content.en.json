@@ -29,7 +29,7 @@
       "id": "daily-login-essentials",
       "category": "beginner",
       "title": "Daily login essentials",
-      "summary": "A 12-part daily routine for free-to-play, light-spending and casual players: rewards, merchants, marches and queues.",
+      "summary": "A 13-part daily routine for free-to-play, light-spending and casual players: rewards, merchants, marches and queues.",
       "tags": [
         "Daily routine",
         "Free rewards",
@@ -38,7 +38,7 @@
       ],
       "icon": "☀",
       "art": "gold",
-      "minutes": 5,
+      "minutes": 7,
       "updated": "2026-10-15",
       "note": "Intel refresh times retain the original UTC schedule with Taiwan time (UTC+8) reference. Other daily guidance was provided by the player.",
       "sections": [
@@ -296,6 +296,87 @@
               "detail": "Review pet dispatches, expert patrols and Daybreak Island."
             }
           ]
+        },
+        {
+          "heading": "13 ◇ Stamina management",
+          "checklist": [
+            {
+              "label": "Keep below the 200-point cap",
+              "detail": "Avoid reaching the cap so natural stamina recovery can continue."
+            },
+            {
+              "label": "Prioritize intel missions",
+              "detail": "Use remaining stamina to hunt beasts or start beast rallies."
+            },
+            {
+              "label": "Use Gina for hunting and starting rallies",
+              "detail": "Take advantage of her reduced stamina consumption."
+            },
+            {
+              "label": "Collect warehouse stamina twice daily",
+              "detail": "Watch the collection times and countdown so you do not miss a claim."
+            },
+            {
+              "label": "Use your pet’s stamina recovery skill",
+              "detail": "Plan around the skill cooldown to avoid wasting recovery opportunities."
+            },
+            {
+              "label": "Save stamina items",
+              "detail": "Keep them for events that require stamina whenever possible."
+            }
+          ],
+          "table": {
+            "caption": "Suggested stamina routine · UTC (UTC+0)",
+            "headers": [
+              "Time (UTC)",
+              "Recommended action"
+            ],
+            "rows": [
+              [
+                "00:00",
+                "Complete intel missions, then spend stamina as needed to bring it to around half."
+              ],
+              [
+                "Before 12:00",
+                "Spend remaining stamina and claim the first warehouse stamina. If claiming leaves you at 140 points, keep below 200 to allow natural recovery."
+              ],
+              [
+                "16:00",
+                "Complete intel missions, claim the second warehouse stamina and spend stamina as needed to bring it to around half."
+              ],
+              [
+                "Other times",
+                "Use pet stamina as appropriate, hunt beasts or start rallies to avoid staying at the cap."
+              ]
+            ]
+          },
+          "body": "This is a suggested routine. Adjust it to your login schedule and the in-game warehouse collection countdown."
+        },
+        {
+          "heading": "Stamina management tips",
+          "checklist": [
+            {
+              "label": "1. Keep natural recovery running",
+              "detail": "Stamina below 200 can continue to recover naturally; you do not need to keep it full."
+            },
+            {
+              "label": "2. Coordinate with intel refreshes",
+              "detail": "Use the 00:00, 08:00 and 16:00 UTC intel refreshes as checkpoints to manage stamina."
+            },
+            {
+              "label": "3. Make use of warehouse stamina",
+              "detail": "Free warehouse stamina can be claimed every 12 hours. Try not to miss it."
+            },
+            {
+              "label": "4. Plan pet skills",
+              "detail": "Arrange stamina replenishment around your pet skill’s cooldown."
+            },
+            {
+              "label": "5. Save stamina items",
+              "detail": "Avoid using them unless necessary and prioritize limited-time events."
+            }
+          ],
+          "body": "Core principle: keep natural stamina recovery running as much as possible. Coordinate intel missions, warehouse stamina and pet skills to reduce daily waste."
         }
       ]
     },
