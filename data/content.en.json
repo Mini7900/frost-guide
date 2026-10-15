@@ -399,34 +399,6 @@
       ]
     },
     {
-      "id": "guide-04",
-      "category": "alliance",
-      "title": "Joining an alliance: start with cooperation",
-      "summary": "Find a suitable alliance and understand its communication and participation rules.",
-      "tags": [
-        "Alliance help",
-        "Teamwork"
-      ],
-      "icon": "⚑",
-      "art": "forest",
-      "minutes": 3,
-      "updated": "2026-10-12",
-      "sections": [
-        {
-          "heading": "Choose an alliance that fits",
-          "body": "Read alliance descriptions and check their main language, active hours and participation requirements. Choose a pace that works with your schedule."
-        },
-        {
-          "heading": "Follow announcements and plans",
-          "body": "Before an event, read alliance announcements for the meeting time, objective and participation instructions. Ask alliance leaders when a rule is unclear."
-        },
-        {
-          "heading": "Use the in-game information",
-          "body": "Help, technology and event limits may change with updates. Check the current in-game rules before taking part."
-        }
-      ]
-    },
-    {
       "id": "guide-05",
       "category": "city",
       "title": "Resource management: prepare for your next build",
