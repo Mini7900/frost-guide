@@ -117,7 +117,7 @@
               ],
               [
                 "Mystery Merchant",
-                "Prioritize exclusive-weapon-related items at 50% off. Buy other items according to your resource needs."
+                "Mystery Coins are hard to obtain. Save them for rare items such as hero exclusive weapons; prioritize related items at 50% off."
               ],
               [
                 "Wandering Merchant · 1. Buy",
@@ -129,7 +129,16 @@
               ]
             ]
           },
-          "body": "Goal: obtain speedups and teleport items using ordinary resources. Stop purchasing a slot once its price switches to gems."
+          "checklist": [
+            {
+              "label": "Mystery Merchant · Purpose",
+              "detail": "Spend scarce Mystery Coins on hard-to-obtain items, such as hero exclusive weapons."
+            },
+            {
+              "label": "Wandering Merchant · Purpose",
+              "detail": "Use ordinary resources to obtain speedups and teleport items. Stop buying once prices switch to gems; do not spend gems to clear the shop."
+            }
+          ]
         },
         {
           "heading": "04 ★ Free rewards",
