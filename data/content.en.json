@@ -92,16 +92,62 @@
       "note": "Daily checklist. Specific limits, costs and rules follow the current in-game display.",
       "sections": [
         {
-          "heading": "Review today’s objectives",
-          "body": "Open the daily activity page after logging in. Review unfinished objectives, current progress and reward requirements before planning your routine."
+          "heading": "At a glance",
+          "steps": [
+            {
+              "icon": "☀",
+              "label": "Review goals"
+            },
+            {
+              "icon": "✓",
+              "label": "Complete tasks"
+            },
+            {
+              "icon": "★",
+              "label": "Claim rewards"
+            }
+          ]
         },
         {
-          "heading": "Combine tasks with your routine",
-          "body": "Compare activity objectives with intel, alliance actions, training and research. Prioritize objectives you can complete together, and count progress only for tasks actually listed in the game."
+          "heading": "Quick checklist",
+          "checklist": [
+            {
+              "label": "Task progress",
+              "detail": "Check unfinished objectives and reward thresholds."
+            },
+            {
+              "label": "Combine tasks",
+              "detail": "Coordinate intel, alliance, training and research tasks."
+            },
+            {
+              "label": "Claim earned rewards",
+              "detail": "Revisit the activity page before logging off."
+            }
+          ]
         },
         {
-          "heading": "Check rewards before logging off",
-          "body": "Return to the activity page after finishing your tasks and claim any earned rewards. Follow the in-game display for reset times, thresholds and reward details."
+          "heading": "What to do next",
+          "table": {
+            "caption": "Daily activity · Quick reference",
+            "headers": [
+              "When",
+              "Action"
+            ],
+            "rows": [
+              [
+                "On login",
+                "Review activity goals before planning your routine."
+              ],
+              [
+                "During play",
+                "Prioritize objectives you can complete together."
+              ],
+              [
+                "Before leaving",
+                "Check progress and claim earned rewards."
+              ]
+            ]
+          }
         }
       ]
     },
@@ -121,16 +167,62 @@
       "note": "Daily checklist. Specific limits, costs and rules follow the current in-game display.",
       "sections": [
         {
-          "heading": "Check attempts and your team",
-          "body": "Open the arena to check your available attempts. Review your selected heroes, equipment and team setup before starting a challenge."
+          "heading": "At a glance",
+          "steps": [
+            {
+              "icon": "⚔",
+              "label": "Check team"
+            },
+            {
+              "icon": "◎",
+              "label": "Review opponent"
+            },
+            {
+              "icon": "★",
+              "label": "Fight & review"
+            }
+          ]
         },
         {
-          "heading": "Review the opponent",
-          "body": "Inspect the opponent’s lineup and the information shown on the page rather than relying only on power. Read unfamiliar hero skills before deciding whether to challenge."
+          "heading": "Quick checklist",
+          "checklist": [
+            {
+              "label": "Available attempts",
+              "detail": "Check how many challenges are available."
+            },
+            {
+              "label": "Team setup",
+              "detail": "Review heroes, equipment and lineup."
+            },
+            {
+              "label": "Opponent lineup",
+              "detail": "Read skills and team composition, not just power."
+            }
+          ]
         },
         {
-          "heading": "Review results and rewards",
-          "body": "Review battle results and note any team changes to try. Follow current arena rules for attempt recovery, settlement times and reward collection."
+          "heading": "What to do next",
+          "table": {
+            "caption": "Arena · Quick reference",
+            "headers": [
+              "When",
+              "Action"
+            ],
+            "rows": [
+              [
+                "Before battle",
+                "Review your team and opponent information."
+              ],
+              [
+                "After battle",
+                "Review results and note adjustments."
+              ],
+              [
+                "Rewards",
+                "Check current settlement and collection rules."
+              ]
+            ]
+          }
         }
       ]
     },
@@ -150,16 +242,62 @@
       "note": "Daily checklist. Specific limits, costs and rules follow the current in-game display.",
       "sections": [
         {
-          "heading": "Check alliance priorities",
-          "body": "Open alliance technology and review announcements, markers or leader instructions so your contributions support the alliance plan."
+          "heading": "At a glance",
+          "steps": [
+            {
+              "icon": "⚑",
+              "label": "Check priorities"
+            },
+            {
+              "icon": "◇",
+              "label": "Review costs"
+            },
+            {
+              "icon": "↻",
+              "label": "Contribute & track"
+            }
+          ]
         },
         {
-          "heading": "Review contribution costs",
-          "body": "Check available contributions, resource costs and returns. Use resources you can afford, and consider the value carefully before spending premium currency."
+          "heading": "Quick checklist",
+          "checklist": [
+            {
+              "label": "Research priority",
+              "detail": "Read announcements, markers or leader instructions."
+            },
+            {
+              "label": "Contribution budget",
+              "detail": "Check attempts, resource costs and returns."
+            },
+            {
+              "label": "Recovery",
+              "detail": "Check for more available contributions during logins."
+            }
+          ]
         },
         {
-          "heading": "Check when contributions recover",
-          "body": "Check for available contributions during your regular logins. Follow the page’s rules for recovery and technology effects before spending speedups or rare items."
+          "heading": "What to do next",
+          "table": {
+            "caption": "Alliance technology · Quick reference",
+            "headers": [
+              "When",
+              "Action"
+            ],
+            "rows": [
+              [
+                "Priority assigned",
+                "Choose technology according to the alliance plan."
+              ],
+              [
+                "Premium currency needed",
+                "Consider its value before spending."
+              ],
+              [
+                "No attempts available",
+                "Follow the page’s recovery rules."
+              ]
+            ]
+          }
         }
       ]
     },
@@ -179,16 +317,62 @@
       "note": "Daily checklist. Specific limits, costs and rules follow the current in-game display.",
       "sections": [
         {
-          "heading": "Review your budget and needs",
-          "body": "Check your alliance currency against upcoming construction, research and event needs. Identify useful items before making exchanges."
+          "heading": "At a glance",
+          "steps": [
+            {
+              "icon": "◇",
+              "label": "Check currency"
+            },
+            {
+              "icon": "⌕",
+              "label": "Review items"
+            },
+            {
+              "icon": "✓",
+              "label": "Exchange & confirm"
+            }
+          ]
         },
         {
-          "heading": "Read item limits",
-          "body": "Check prices, quantities, purchase limits and item descriptions before exchanging. Follow the shop display for refresh rules and limited-time availability."
+          "heading": "Quick checklist",
+          "checklist": [
+            {
+              "label": "Your needs",
+              "detail": "List items for upcoming builds, research or events."
+            },
+            {
+              "label": "Prices and limits",
+              "detail": "Read quantity, price, purchase limits and descriptions."
+            },
+            {
+              "label": "Keep a reserve",
+              "detail": "Keep some currency if it suits your plan."
+            }
+          ]
         },
         {
-          "heading": "Keep some flexibility",
-          "body": "Confirm that exchanged items were received and keep currency in reserve if it suits your plan. This checklist does not prescribe fixed must-buy items, since needs vary by progress and version."
+          "heading": "What to do next",
+          "table": {
+            "caption": "Alliance shop · Quick reference",
+            "headers": [
+              "When",
+              "Action"
+            ],
+            "rows": [
+              [
+                "Item needed",
+                "Confirm price and purpose before exchanging."
+              ],
+              [
+                "Limited-time or refresh item",
+                "Read the current shop conditions first."
+              ],
+              [
+                "Exchange complete",
+                "Check received items and remaining currency."
+              ]
+            ]
+          }
         }
       ]
     },
@@ -208,16 +392,62 @@
       "note": "Daily checklist. Specific limits, costs and rules follow the current in-game display.",
       "sections": [
         {
-          "heading": "Check completed and idle queues",
-          "body": "Review training and research facilities when you log in. Collect completed work where required and check for idle queues you can use."
+          "heading": "At a glance",
+          "steps": [
+            {
+              "icon": "✓",
+              "label": "Collect results"
+            },
+            {
+              "icon": "◇",
+              "label": "Check resources"
+            },
+            {
+              "icon": "◷",
+              "label": "Plan offline queues"
+            }
+          ]
         },
         {
-          "heading": "Check prerequisites and resources",
-          "body": "Review available troop types, research prerequisites, resource costs and expected durations. Choose an order that supports your current goals."
+          "heading": "Quick checklist",
+          "checklist": [
+            {
+              "label": "Completed and idle",
+              "detail": "Review facilities and collect finished work where needed."
+            },
+            {
+              "label": "Prerequisites",
+              "detail": "Check troop types, research requirements, costs and duration."
+            },
+            {
+              "label": "Time away",
+              "detail": "Choose work around your next login."
+            }
+          ]
         },
         {
-          "heading": "Plan around your next login",
-          "body": "Before logging off, choose work that fits your expected time away to reduce idle time. Use speedups for a clear purpose rather than simply clearing a queue."
+          "heading": "What to do next",
+          "table": {
+            "caption": "Training and research queues · Quick reference",
+            "headers": [
+              "When",
+              "Action"
+            ],
+            "rows": [
+              [
+                "On login",
+                "Handle completed work and check idle queues."
+              ],
+              [
+                "Before leaving",
+                "Plan training or research for your time away."
+              ],
+              [
+                "Considering speedups",
+                "Use them for a goal, not just to clear a queue."
+              ]
+            ]
+          }
         }
       ]
     },

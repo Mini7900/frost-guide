@@ -74,3 +74,7 @@ node --check app.js
 ## 表格內容
 
 `sections` 可設定 `table`，包含 `caption`（表格名稱）、`headers`（欄位名稱陣列）及 `rows`（每列儲存格文字的二維陣列）。列的欄數應與 headers 相同。表格顯示在標題／圖片之後、body 說明之前；中英文各自維護，表格文字也能被搜尋。
+
+## 圖示流程與檢查清單
+
+`sections.steps` 是依序排列的圖示流程陣列，每項包含 `icon` 與 `label`。`sections.checklist` 是閱讀用檢查清單，每項包含 `label` 與 `detail`；勾號僅為視覺標記，不記錄任務完成狀態。兩者均支援中英文並納入搜尋。

@@ -6,9 +6,10 @@ try { if (localStorage.getItem('frost-language') === 'en') language = 'en'; } ca
 $('#language').value = language;
 const t = (key, values = {}) => Object.entries(values).reduce((text, [name, value]) => text.replaceAll(`{${name}}`, value), data.ui[key]);
 const el = (tag, text, className) => { const node = document.createElement(tag); node.textContent = text; if (className) node.className = className; return node; };
+const searchText = value => typeof value === 'string' ? value : Array.isArray(value) ? value.map(searchText).join(' ') : value && typeof value === 'object' ? Object.values(value).map(searchText).join(' ') : '';
 function render() {
   const query = $('#search').value.trim().toLocaleLowerCase();
-  const guides = data.guides.filter(g => (active === 'all' || g.category === active) && [g.title, g.summary, ...g.tags, ...g.sections.map(s => [s.heading, s.body, ...(s.table?.headers || []), ...(s.table?.rows.flat() || [])].join(' '))].join(' ').toLocaleLowerCase().includes(query));
+  const guides = data.guides.filter(g => (active === 'all' || g.category === active) && [g.title, g.summary, ...g.tags, searchText(g.sections)].join(' ').toLocaleLowerCase().includes(query));
   $('#results-count').textContent = t('results', {count: String(guides.length).padStart(2, '0')});
   $('#cards').replaceChildren();
   document.querySelectorAll('.filter').forEach(b => { b.classList.toggle('selected', b.dataset.id === active); b.setAttribute('aria-pressed', String(b.dataset.id === active)); });
@@ -27,6 +28,30 @@ function openGuide(g) {
   g.sections.forEach(s => {
     const section = el('section', '', 'article-step');
     section.append(el('h3', s.heading));
+    if (s.steps) {
+      const flow = el('ol', '', 'guide-flow');
+      s.steps.forEach((step, index) => {
+        const item = el('li', '', 'guide-flow-step');
+        const icon = el('span', step.icon, 'flow-icon');
+        icon.setAttribute('aria-hidden', 'true');
+        item.append(icon, el('span', String(index + 1).padStart(2, '0'), 'flow-number'), el('strong', step.label));
+        flow.append(item);
+      });
+      section.append(flow);
+    }
+    if (s.checklist) {
+      const list = el('ul', '', 'guide-checklist');
+      s.checklist.forEach(check => {
+        const item = document.createElement('li');
+        const marker = el('span', '✓', 'check-icon');
+        marker.setAttribute('aria-hidden', 'true');
+        const text = document.createElement('div');
+        text.append(el('strong', check.label), el('p', check.detail));
+        item.append(marker, text);
+        list.append(item);
+      });
+      section.append(list);
+    }
     if (s.image) {
       const figure = el('figure', '', 'guide-figure');
       const image = document.createElement('img');
