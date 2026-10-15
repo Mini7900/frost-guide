@@ -8,7 +8,7 @@ const t = (key, values = {}) => Object.entries(values).reduce((text, [name, valu
 const el = (tag, text, className) => { const node = document.createElement(tag); node.textContent = text; if (className) node.className = className; return node; };
 function render() {
   const query = $('#search').value.trim().toLocaleLowerCase();
-  const guides = data.guides.filter(g => (active === 'all' || g.category === active) && [g.title, g.summary, ...g.tags, ...g.sections.map(s => s.heading + s.body)].join(' ').toLocaleLowerCase().includes(query));
+  const guides = data.guides.filter(g => (active === 'all' || g.category === active) && [g.title, g.summary, ...g.tags, ...g.sections.map(s => [s.heading, s.body, ...(s.table?.headers || []), ...(s.table?.rows.flat() || [])].join(' '))].join(' ').toLocaleLowerCase().includes(query));
   $('#results-count').textContent = t('results', {count: String(guides.length).padStart(2, '0')});
   $('#cards').replaceChildren();
   document.querySelectorAll('.filter').forEach(b => { b.classList.toggle('selected', b.dataset.id === active); b.setAttribute('aria-pressed', String(b.dataset.id === active)); });
@@ -48,7 +48,34 @@ function openGuide(g) {
       if (s.caption) figure.append(el('figcaption', s.caption));
       section.append(figure);
     }
-    section.append(el('p', s.body));
+    if (s.table) {
+      const wrapper = el('div', '', 'guide-table-wrap');
+      const table = document.createElement('table');
+      table.className = 'guide-table';
+      table.append(el('caption', s.table.caption || s.heading));
+      const head = document.createElement('thead');
+      const headings = document.createElement('tr');
+      s.table.headers.forEach(label => {
+        const cell = el('th', label);
+        cell.scope = 'col';
+        headings.append(cell);
+      });
+      head.append(headings);
+      const body = document.createElement('tbody');
+      s.table.rows.forEach(row => {
+        const tr = document.createElement('tr');
+        row.forEach((value, index) => {
+          const cell = el(index === 0 ? 'th' : 'td', value);
+          if (index === 0) cell.scope = 'row';
+          tr.append(cell);
+        });
+        body.append(tr);
+      });
+      table.append(head, body);
+      wrapper.append(table);
+      section.append(wrapper);
+    }
+    if (s.body) section.append(el('p', s.body));
     content.append(section);
   });
   content.append(el('p', g.note || t('updated', {date: g.updated}), 'article-note')); if (!$('#article').open) {

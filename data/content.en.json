@@ -42,16 +42,37 @@
       "icon": "◷",
       "art": "ice",
       "minutes": 1,
-      "updated": "2026-10-13",
-      "note": "All times are UTC (UTC+0).",
+      "updated": "2026-10-15",
+      "note": "The main schedule uses UTC (UTC+0); Taiwan is UTC+8.",
       "sections": [
         {
-          "heading": "Daily refresh schedule (UTC)",
-          "body": "00:00 UTC\n08:00 UTC\n16:00 UTC\n\nIntel refreshes three times a day, eight hours apart."
-        },
-        {
-          "heading": "Taiwan time reference (UTC+8)",
-          "body": "00:00 UTC → 08:00 Taiwan time\n08:00 UTC → 16:00 Taiwan time\n16:00 UTC → 00:00 the next day in Taiwan (24:00)\n\nThe primary schedule in this guide uses UTC."
+          "heading": "Daily refresh schedule",
+          "table": {
+            "caption": "Intel refresh times: UTC and Taiwan",
+            "headers": [
+              "Refresh",
+              "UTC time",
+              "Taiwan time (UTC+8)"
+            ],
+            "rows": [
+              [
+                "1",
+                "00:00",
+                "08:00"
+              ],
+              [
+                "2",
+                "08:00",
+                "16:00"
+              ],
+              [
+                "3",
+                "16:00",
+                "00:00 (next day)"
+              ]
+            ]
+          },
+          "body": "Intel refreshes 3 times a day, every 8 hours."
         }
       ]
     },
