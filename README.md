@@ -78,3 +78,37 @@ node --check app.js
 ## 圖示流程與檢查清單
 
 `sections.steps` 是依序排列的圖示流程陣列，每項包含 `icon` 與 `label`。`sections.checklist` 是閱讀用檢查清單，每項包含 `label` 與 `detail`；勾號僅為視覺標記，不記錄任務完成狀態。兩者均支援中英文並納入搜尋。
+
+## 步驟式翻頁教學
+
+`components/tutorial.js` 提供共用翻頁元件，由 `app.js` 在具有 `tutorial` 的攻略區塊中載入；其他區塊不受影響。沿用現有的兩份語系 JSON 與 `ui` 翻譯，不需額外套件或建置，適用 GitHub Pages／Cloudflare Pages（部署時須包含 `components/`）。
+
+在 `data/content.json` 的某篇攻略 `sections` 中新增：
+
+```json
+{
+  "heading": "打熊步驟教學",
+  "tutorial": {
+    "steps": [
+      {
+        "order": 1,
+        "image": "images/bear/step-1.png",
+        "title": "步驟 1：準備隊伍",
+        "body": "確認隊伍與裝備後再參加活動。",
+        "alt": "隊伍準備畫面",
+        "caption": "圖片說明（可省略）"
+      }
+    ]
+  }
+}
+```
+
+- **新增主題**：在既有攻略加入上述區塊，或依既有攻略格式新增一篇（使用唯一 `id`、有效 `category` 與必要欄位）。不同主題指定各自的 `tutorial.steps` 即共用同一元件，也可以在一篇攻略放多個翻頁區塊。
+- **中英文內容**：在 `data/content.en.json` 的相同攻略、相同區塊位置提供英文 `heading`、`title`、`body`、`alt` 與 `caption`。兩份資料維持相同的步驟與 `order`；操作按鈕及無步驟提示等文字位於各檔案 `ui.tutorial*`。切換語系會保留目前頁碼。
+- **新增／刪除步驟**：在兩份 JSON 的 `tutorial.steps` 同步加入／移除物件。`order`、`image`、`title`、`body` 必填；`order` 使用不重複的數字，依數字由小到大顯示，頁數自動計算，不必連號。空陣列顯示無步驟提示，單一步驟時兩個按鈕皆停用。
+- **調整順序**：修改兩份 JSON 的 `order`，不用修改 JavaScript。新開攻略從第一頁開始；同一次開啟期間切換語言保留目前頁碼。
+- **更換圖片**：放入 PNG／JPG／WebP 等瀏覽器支援格式，更新兩份 JSON 的 `image`（相對網站根目錄，如 `images/heroes/step-1.webp`）與 `alt`。圖片必須在本站，使用相對路徑才能支援部署子目錄。圖片載入失敗時仍可閱讀標題、說明與翻頁。
+
+每頁顯示一張圖片與文字；點圖以原生 dialog 放大，可用關閉按鈕、Escape 或背景關閉。手機在教學頁面左右滑動切換，垂直滑動仍可捲動；放大模式不翻頁。動畫遵循 `prefers-reduced-motion`。所有 JSON 文字透過 `textContent` 顯示，不解析 HTML。
+
+驗證時依 README 啟動伺服器，檢查打熊教學的三頁、首尾按鈕、圖片放大與關閉、手機滑動，以及切換語系保留頁碼。另檢查其他攻略仍照常顯示。

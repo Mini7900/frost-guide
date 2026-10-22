@@ -395,31 +395,41 @@
       "updated": "2026-10-13",
       "sections": [
         {
-          "heading": "步驟 1：準備隊伍",
-          "image": "images/bear/step-1.png",
-          "alt": "冬季角色準備裝備的示意圖",
-          "caption": "測試示意圖・非遊戲截圖",
-          "body": "活動前先確認自己的隊伍。這張測試圖展示通用角色與裝備，並非推薦英雄陣容。之後可替換為你的隊伍截圖，並補上實際操作說明。",
-          "imageWidth": 1536,
-          "imageHeight": 1024
-        },
-        {
-          "heading": "步驟 2：集合與集結",
-          "image": "images/bear/step-2.png",
-          "alt": "隊伍在集結旗幟旁集合的示意圖",
-          "caption": "測試示意圖・非遊戲截圖",
-          "body": "參與前先查看聯盟公告與遊戲內活動說明。這張圖示範集結截圖的放置位置，不代表實際遊戲按鈕或操作介面。",
-          "imageWidth": 1536,
-          "imageHeight": 1024
-        },
-        {
-          "heading": "步驟 3：攻擊與查看結果",
-          "image": "images/bear/step-3.png",
-          "alt": "隊伍與熊位於雪地場景的示意圖",
-          "caption": "測試示意圖・非遊戲截圖",
-          "body": "依遊戲當前規則與聯盟安排參與，再查看結果。這張測試圖之後可換成你的戰鬥截圖，並在下方補上對應說明。",
-          "imageWidth": 1536,
-          "imageHeight": 1024
+          "heading": "打熊步驟教學",
+          "tutorial": {
+            "steps": [
+              {
+                "image": "images/bear/step-1.png",
+                "alt": "冬季角色準備裝備的示意圖",
+                "caption": "測試示意圖・非遊戲截圖",
+                "body": "活動前先確認自己的隊伍。這張測試圖展示通用角色與裝備，並非推薦英雄陣容。之後可替換為你的隊伍截圖，並補上實際操作說明。",
+                "imageWidth": 1536,
+                "imageHeight": 1024,
+                "order": 1,
+                "title": "步驟 1：準備隊伍"
+              },
+              {
+                "image": "images/bear/step-2.png",
+                "alt": "隊伍在集結旗幟旁集合的示意圖",
+                "caption": "測試示意圖・非遊戲截圖",
+                "body": "參與前先查看聯盟公告與遊戲內活動說明。這張圖示範集結截圖的放置位置，不代表實際遊戲按鈕或操作介面。",
+                "imageWidth": 1536,
+                "imageHeight": 1024,
+                "order": 2,
+                "title": "步驟 2：集合與集結"
+              },
+              {
+                "image": "images/bear/step-3.png",
+                "alt": "隊伍與熊位於雪地場景的示意圖",
+                "caption": "測試示意圖・非遊戲截圖",
+                "body": "依遊戲當前規則與聯盟安排參與，再查看結果。這張測試圖之後可換成你的戰鬥截圖，並在下方補上對應說明。",
+                "imageWidth": 1536,
+                "imageHeight": 1024,
+                "order": 3,
+                "title": "步驟 3：攻擊與查看結果"
+              }
+            ]
+          }
         }
       ]
     },
@@ -675,6 +685,12 @@
     "updated": "資料更新：{date} · 示範內容，請依實際遊戲資料替換。",
     "error": "攻略暫時無法載入，請稍後再試。",
     "fieldNote": "探索筆記 / {count}",
-    "imageError": "圖片暫時無法載入，你仍可閱讀下方步驟說明。"
+    "imageError": "圖片暫時無法載入，你仍可閱讀下方步驟說明。",
+    "tutorialPrevious": "上一頁",
+    "tutorialNext": "下一頁",
+    "tutorialZoom": "放大教學圖片",
+    "tutorialCloseZoom": "關閉放大圖片",
+    "tutorialEmpty": "目前沒有教學步驟。",
+    "tutorialProgress": "第 {current} 步，共 {total} 步"
   }
 }
