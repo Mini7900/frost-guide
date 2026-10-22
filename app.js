@@ -1,8 +1,6 @@
-const {createTutorial} = await import(new URL(`./components/tutorial.js${new URL(import.meta.url).search}`, import.meta.url));
 const assetVersion = new URL(import.meta.url).searchParams.get('v') || `${Date.now()}-${crypto.randomUUID()}`;
 const $ = (selector) => document.querySelector(selector);
 let data, datasets, active = 'all', articleId;
-const tutorialPositions = new Map();
 let language = 'zh-Hant';
 try { if (localStorage.getItem('frost-language') === 'en') language = 'en'; } catch {}
 $('#language').value = language;
@@ -24,19 +22,12 @@ function render() {
   });
 }
 function openGuide(g) {
-  if (!$('#article').open) tutorialPositions.clear();
   articleId = g.id;
   $('#article-title').textContent = g.title;
   const content = $('#article-content'); content.replaceChildren(el('p', `${data.categories.find(c => c.id === g.category).name} · ${t('minutes', {count: g.minutes})}`, 'eyebrow'), el('p', g.summary, 'article-summary'));
-  g.sections.forEach((s, sectionIndex) => {
+  g.sections.forEach(s => {
     const section = el('section', '', 'article-step');
     section.append(el('h3', s.heading));
-    if (s.tutorial) {
-      const key = `${g.id}:${sectionIndex}`;
-      section.append(createTutorial({steps: s.tutorial.steps, t, assetVersion,
-        initialIndex: tutorialPositions.get(key) || 0,
-        onChange: index => tutorialPositions.set(key, index)}));
-    }
     if (s.steps) {
       const flow = el('ol', '', 'guide-flow');
       s.steps.forEach((step, index) => {
