@@ -675,6 +675,8 @@
     "updated": "資料更新：{date} · 示範內容，請依實際遊戲資料替換。",
     "error": "攻略暫時無法載入，請稍後再試。",
     "fieldNote": "探索筆記 / {count}",
-    "imageError": "圖片暫時無法載入，你仍可閱讀下方步驟說明。"
+    "imageError": "圖片暫時無法載入，你仍可閱讀下方步驟說明。",
+    "referenceLabel": "參考網站：",
+    "referenceSite": "寒霜啟示錄社群網站 ↗（另開分頁）"
   }
 }

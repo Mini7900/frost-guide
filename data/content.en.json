@@ -675,6 +675,8 @@
     "updated": "Updated: {date} · Sample content; replace with verified game information.",
     "error": "Unable to load guides. Please try again later.",
     "fieldNote": "FIELD NOTE / {count}",
-    "imageError": "Image temporarily unavailable. You can still read the instructions below."
+    "imageError": "Image temporarily unavailable. You can still read the instructions below.",
+    "referenceLabel": "Reference website:",
+    "referenceSite": "Whiteout Survival Community ↗ (opens in a new tab)"
   }
 }
