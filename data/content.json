@@ -396,7 +396,7 @@
       "sections": [
         {
           "heading": "步驟 1：準備隊伍",
-          "image": "images/bear/step-1.png",
+          "image": "https://late-scene-d182.frostguide.workers.dev/images/bear/step1.png",
           "alt": "冬季角色準備裝備的示意圖",
           "caption": "測試示意圖・非遊戲截圖",
           "body": "活動前先確認自己的隊伍。這張測試圖展示通用角色與裝備，並非推薦英雄陣容。之後可替換為你的隊伍截圖，並補上實際操作說明。",

@@ -396,7 +396,7 @@
       "sections": [
         {
           "heading": "Step 1: Prepare your team",
-          "image": "images/bear/step-1.png",
+          "image": "https://late-scene-d182.frostguide.workers.dev/images/bear/step1.png",
           "alt": "A sample illustration of winter survivors preparing their equipment",
           "caption": "Demo illustration · not a game screenshot",
           "body": "Review your team before the event. This placeholder shows generic survivors and equipment, not a recommended hero lineup. Replace it with your own team screenshot and instructions.",
