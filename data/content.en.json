@@ -686,19 +686,6 @@
   },
   "websites": [
     {
-      "id": "whiteout-community",
-      "category": "websites",
-      "title": "Whiteout Survival Community",
-      "summary": "Visit the community website for more Whiteout Survival resources.",
-      "tags": [
-        "Community",
-        "Resources"
-      ],
-      "icon": "↗",
-      "art": "ice",
-      "url": "https://www.whiteoutsurvival-community.com/zh-tw/"
-    },
-    {
       "id": "wos-guru",
       "category": "websites",
       "title": "WOS Guru",

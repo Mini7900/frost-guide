@@ -686,19 +686,6 @@
   },
   "websites": [
     {
-      "id": "whiteout-community",
-      "category": "websites",
-      "title": "Whiteout Survival Community",
-      "summary": "前往寒霜啟示錄社群網站，查看更多遊戲相關資訊與參考資料。",
-      "tags": [
-        "社群網站",
-        "參考資料"
-      ],
-      "icon": "↗",
-      "art": "ice",
-      "url": "https://www.whiteoutsurvival-community.com/zh-tw/"
-    },
-    {
       "id": "wos-guru",
       "category": "websites",
       "title": "WOS Guru",
