@@ -697,6 +697,19 @@
       "icon": "↗",
       "art": "ice",
       "url": "https://www.whiteoutsurvival-community.com/zh-tw/"
+    },
+    {
+      "id": "wos-guru",
+      "category": "websites",
+      "title": "WOS Guru",
+      "summary": "前往 WOS Guru，查看更多寒霜啟示錄相關參考資料。",
+      "tags": [
+        "寒霜啟示錄",
+        "參考資料"
+      ],
+      "icon": "↗",
+      "art": "forest",
+      "url": "https://wosguru.com/zh-TW"
     }
   ]
 }

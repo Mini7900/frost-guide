@@ -697,6 +697,19 @@
       "icon": "↗",
       "art": "ice",
       "url": "https://www.whiteoutsurvival-community.com/zh-tw/"
+    },
+    {
+      "id": "wos-guru",
+      "category": "websites",
+      "title": "WOS Guru",
+      "summary": "Visit WOS Guru for more Whiteout Survival reference resources.",
+      "tags": [
+        "Whiteout Survival",
+        "Resources"
+      ],
+      "icon": "↗",
+      "art": "forest",
+      "url": "https://wosguru.com/zh-TW"
     }
   ]
 }
