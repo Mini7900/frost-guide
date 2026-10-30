@@ -22,6 +22,10 @@
     {
       "id": "alliance",
       "name": "聯盟協作"
+    },
+    {
+      "id": "websites",
+      "name": "參考網站"
     }
   ],
   "guides": [
@@ -676,7 +680,23 @@
     "error": "攻略暫時無法載入，請稍後再試。",
     "fieldNote": "探索筆記 / {count}",
     "imageError": "圖片暫時無法載入，你仍可閱讀下方步驟說明。",
-    "referenceLabel": "參考網站：",
-    "referenceSite": "寒霜啟示錄社群網站 ↗（另開分頁）"
-  }
+    "externalWebsite": "外部網站",
+    "visitWebsite": "前往網站 ↗（另開分頁）",
+    "resultsEntries": "{count} 筆內容"
+  },
+  "websites": [
+    {
+      "id": "whiteout-community",
+      "category": "websites",
+      "title": "寒霜啟示錄社群網站",
+      "summary": "前往寒霜啟示錄社群網站，查看更多遊戲相關資訊與參考資料。",
+      "tags": [
+        "社群網站",
+        "參考資料"
+      ],
+      "icon": "↗",
+      "art": "ice",
+      "url": "https://www.whiteoutsurvival-community.com/zh-tw/"
+    }
+  ]
 }

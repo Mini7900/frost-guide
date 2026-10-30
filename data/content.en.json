@@ -22,6 +22,10 @@
     {
       "id": "alliance",
       "name": "Alliance teamwork"
+    },
+    {
+      "id": "websites",
+      "name": "Reference websites"
     }
   ],
   "guides": [
@@ -676,7 +680,23 @@
     "error": "Unable to load guides. Please try again later.",
     "fieldNote": "FIELD NOTE / {count}",
     "imageError": "Image temporarily unavailable. You can still read the instructions below.",
-    "referenceLabel": "Reference website:",
-    "referenceSite": "Whiteout Survival Community ↗ (opens in a new tab)"
-  }
+    "externalWebsite": "External website",
+    "visitWebsite": "Visit website ↗ (opens in a new tab)",
+    "resultsEntries": "{count} results"
+  },
+  "websites": [
+    {
+      "id": "whiteout-community",
+      "category": "websites",
+      "title": "Whiteout Survival Community",
+      "summary": "Visit the community website for more Whiteout Survival resources.",
+      "tags": [
+        "Community",
+        "Resources"
+      ],
+      "icon": "↗",
+      "art": "ice",
+      "url": "https://www.whiteoutsurvival-community.com/zh-tw/"
+    }
+  ]
 }

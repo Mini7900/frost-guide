@@ -9,16 +9,23 @@ const el = (tag, text, className) => { const node = document.createElement(tag);
 const searchText = value => typeof value === 'string' ? value : Array.isArray(value) ? value.map(searchText).join(' ') : value && typeof value === 'object' ? Object.values(value).map(searchText).join(' ') : '';
 function render() {
   const query = $('#search').value.trim().toLocaleLowerCase();
-  const guides = data.guides.filter(g => (active === 'all' || g.category === active) && [g.title, g.summary, ...g.tags, searchText(g.sections)].join(' ').toLocaleLowerCase().includes(query));
-  $('#results-count').textContent = t('results', {count: String(guides.length).padStart(2, '0')});
+  const guides = [...data.guides, ...(data.websites || [])].filter(g => (active === 'all' || g.category === active) && [g.title, g.summary, ...g.tags, searchText(g.sections)].join(' ').toLocaleLowerCase().includes(query));
+  $('#results-count').textContent = t(guides.some(g => g.url) || active === 'websites' ? 'resultsEntries' : 'results', {count: String(guides.length).padStart(2, '0')});
   $('#cards').replaceChildren();
   document.querySelectorAll('.filter').forEach(b => { b.classList.toggle('selected', b.dataset.id === active); b.setAttribute('aria-pressed', String(b.dataset.id === active)); });
   if (!guides.length) $('#cards').append(el('p', t('empty'), 'empty'));
   guides.forEach((g, index) => {
-    const card = el('button', '', `card theme-${g.art}`); card.type = 'button';
-    const art = el('div', '', 'card-art'); art.append(el('span', g.icon, 'art-icon'), el('span', t('fieldNote', {count: String(index + 1).padStart(2, '0')}), 'art-caption'));
-    const body = el('div', '', 'card-body'); const meta = el('div', '', 'meta'); meta.append(el('span', data.categories.find(c => c.id === g.category).name), el('span', t('minutes', {count: g.minutes})));
-    body.append(meta, el('h3', g.title), el('p', g.summary)); const bottom = el('div', '', 'card-bottom'); bottom.append(el('span', g.tags.join(' / ')), el('span', '↗')); body.append(bottom); card.append(art, body); card.addEventListener('click', () => openGuide(g)); $('#cards').append(card);
+    const card = el(g.url ? 'a' : 'button', '', `card theme-${g.art}`);
+    if (g.url) {
+      const url = new URL(g.url);
+      if (!['https:', 'http:'].includes(url.protocol)) return;
+      card.href = url.href;
+      card.target = '_blank';
+      card.rel = 'noopener noreferrer';
+    } else card.type = 'button';
+    const art = el('div', '', 'card-art'); art.append(el('span', g.icon, 'art-icon'), el('span', g.url ? t('externalWebsite') : t('fieldNote', {count: String(index + 1).padStart(2, '0')}), 'art-caption'));
+    const body = el('div', '', 'card-body'); const meta = el('div', '', 'meta'); meta.append(el('span', data.categories.find(c => c.id === g.category).name), el('span', g.url ? t('externalWebsite') : t('minutes', {count: g.minutes})));
+    body.append(meta, el('h3', g.title), el('p', g.summary)); const bottom = el('div', '', 'card-bottom'); bottom.append(el('span', g.url ? t('visitWebsite') : g.tags.join(' / ')), el('span', '↗')); body.append(bottom); card.append(art, body); if (!g.url) card.addEventListener('click', () => openGuide(g)); $('#cards').append(card);
   });
 }
 function openGuide(g) {

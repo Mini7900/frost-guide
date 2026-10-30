@@ -78,3 +78,24 @@ node --check app.js
 ## 圖示流程與檢查清單
 
 `sections.steps` 是依序排列的圖示流程陣列，每項包含 `icon` 與 `label`。`sections.checklist` 是閱讀用檢查清單，每項包含 `label` 與 `detail`；勾號僅為視覺標記，不記錄任務完成狀態。兩者均支援中英文並納入搜尋。
+
+## 參考網站類別
+
+「參考網站」與其他分類一起顯示，網站卡片可搜尋，點擊後另開分頁前往外部網站，不會開啟攻略閱讀視窗。
+
+要新增連結，在 `data/content.json` 與 `data/content.en.json` 的 `websites` 陣列各加入同一筆資料，提供對應語言的 `title`、`summary`、`tags`：
+
+```json
+{
+  "id": "example-community",
+  "category": "websites",
+  "title": "網站名稱",
+  "summary": "網站介紹",
+  "tags": ["參考資料"],
+  "icon": "↗",
+  "art": "ice",
+  "url": "https://example.com/"
+}
+```
+
+`id` 請保持唯一，`url` 使用完整的 HTTP／HTTPS 網址；其餘樣式沿用攻略卡片，不需要修改程式碼。
